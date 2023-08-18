@@ -1,6 +1,6 @@
-import { BlurFilter, TextStyle } from 'pixi.js';
-import { Stage, Container, Sprite, Text} from '@pixi/react';
-import { useMemo } from 'react';
+import { TextStyle } from 'pixi.js'; //BlurFilter
+import { Stage, Container, Sprite, Text } from '@pixi/react';
+// import { useMemo } from 'react';
 
 const style = new TextStyle({
   align: 'center',
@@ -21,7 +21,7 @@ const style = new TextStyle({
 });
 
 export const PixiExample = () => {
-  const blurFilter = useMemo(() => new BlurFilter(4), []);
+  // const blurFilter = useMemo(() => new BlurFilter(4), []);
 
   return (
     <Stage>
