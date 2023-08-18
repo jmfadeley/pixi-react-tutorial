@@ -4,7 +4,7 @@ import { PixiExample } from './PixiExample';
 function App() {
   return (
     <div className="App">
-			<PixiExample />
+      <PixiExample />
     </div>
   );
 }
