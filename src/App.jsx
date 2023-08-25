@@ -1,10 +1,10 @@
 import './App.css';
-import { SimpleMeshExample } from './pixi/SimpleMeshExample';
+import { BasicTutorialStage } from './pixi/basicTutorial/BasicTutorialStage'
 
 function App() {
   return (
     <div className="App">
-      <SimpleMeshExample />
+      <BasicTutorialStage />
     </div>
   );
 }
