@@ -1,10 +1,11 @@
 import './App.css';
-import { BasicTutorialStage } from './pixi/basicTutorial/BasicTutorialStage'
+import { StageExample } from './pixi/StageExample';
 
+// This is a good place to put the asset loader since it's only run once.
 function App() {
   return (
     <div className="App">
-      <BasicTutorialStage />
+      <StageExample />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 
-import { SimpleMesh, Stage } from '@pixi/react';
+import { SimpleMesh } from '@pixi/react';
 import { DRAW_MODES } from 'pixi.js';
 
 const w = 500;
@@ -30,15 +30,11 @@ const state = {
 // https://pixijs.io/pixi-react/components/SimpleMesh/
 export const SimpleMeshExample = () => {
   return (
-    <div style={{marginTop: '4em'}}>
-      <Stage width={500} height={300} options={{ backgroundColor: 0xeef1f5 }}>
-        <SimpleMesh
-          image='https://pixijs.io/pixi-react/img/mesh-placeholder.png'
-          uvs={state.uvs}
-          vertices={state.vertices}
-          indices={state.indices}
-          drawMode={DRAW_MODES.TRIANGLES} />
-      </Stage>
-    </div>
+    <SimpleMesh
+      image='https://pixijs.io/pixi-react/img/mesh-placeholder.png'
+      uvs={state.uvs}
+      vertices={state.vertices}
+      indices={state.indices}
+      drawMode={DRAW_MODES.TRIANGLES} />
   );
 }
